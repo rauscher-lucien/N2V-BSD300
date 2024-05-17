@@ -129,7 +129,7 @@ class Trainer:
 
         model = NewUNet().to(self.device)
 
-        criterion = nn.MSELoss(reduction='sum').to(self.device)
+        criterion = nn.MSELoss().to(self.device)
 
         optimizer = torch.optim.Adam(model.parameters(), self.lr)
 

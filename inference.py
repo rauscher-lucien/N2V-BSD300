@@ -110,8 +110,8 @@ def main():
         print(f"Project name: {project_name}")
     else:
         # If not running on the server, perhaps use a default data_dir or handle differently
-        data_dir = r"C:\Users\rausc\Documents\EMBL\data\BSD300_one\noisy"
-        project_dir = r"C:\Users\rausc\Documents\EMBL\projects\N2V-BSD300\test_2"
+        data_dir = r"Z:\members\Rauscher\data\BSD300_one\single_noisy"
+        project_dir = r"Z:\members\Rauscher\projects\N2V-BSD300\BSD300_one-test_1"
         inference_name = 'single'
 
     #********************************************************#
