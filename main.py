@@ -64,7 +64,7 @@ def main():
         val_data_dir = args.val_data_dir
         project_name = args.project_name 
         train_continue = args.train_continue
-        project_dir = os.path.join('/g', 'prevedel', 'members', 'Rauscher', 'projects', 'n2v', 'N2V-standard')
+        project_dir = os.path.join('/g', 'prevedel', 'members', 'Rauscher', 'projects', 'N2V-BSD300')
 
         print(f"Using train data directory: {train_data_dir}")
         print(f"Using val data directory: {val_data_dir}")
