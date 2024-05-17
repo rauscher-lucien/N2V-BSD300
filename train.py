@@ -88,12 +88,13 @@ class Trainer:
             Normalize(mean, std),
             RandomCrop(output_size=(64,64)),
             RandomHorizontalFlip(),
-            N2V_mask_generator(),
+            N2V_mask_generator_median(),
             ToTensor()
         ])
 
         transform_inv_train = transforms.Compose([
-            ToNumpy()
+            ToNumpy(),
+            Denormalize(mean, std)
         ])
 
 
@@ -174,7 +175,7 @@ class Trainer:
             avg_train_loss = train_loss / len(train_loader)
             self.writer.add_scalar('Loss/train', avg_train_loss, epoch)
 
-            print(f'Epoch [{epoch}/{self.num_epoch}], Train Loss: {avg_train_loss:.4f}')
+            print(f'Epoch [{epoch}/{self.num_epoch}], Train Loss: {avg_train_loss:.8f}')
 
             if avg_train_loss < best_train_loss:
                 best_train_loss = avg_train_loss

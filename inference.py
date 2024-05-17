@@ -112,7 +112,7 @@ def main():
         # If not running on the server, perhaps use a default data_dir or handle differently
         data_dir = r"Z:\members\Rauscher\data\BSD300_one\single_noisy"
         project_dir = r"Z:\members\Rauscher\projects\N2V-BSD300\BSD300_one-test_1"
-        inference_name = 'single'
+        inference_name = 'infer'
 
     #********************************************************#
 

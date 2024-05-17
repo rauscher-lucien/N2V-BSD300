@@ -75,8 +75,8 @@ def main():
         train_data_dir = r"C:\Users\rausc\Documents\EMBL\data\BSD300_one\single_noisy"
         val_data_dir = r"C:\Users\rausc\Documents\EMBL\data\BSD300_one\single_noisy"
         project_dir = os.path.join('C:\\', 'Users', 'rausc', 'Documents', 'EMBL', 'projects', 'N2V-BSD300')
-        project_name = 'test_2'
-        train_continue = 'on'
+        project_name = 'test_1'
+        train_continue = 'off'
 
 
     data_dict = {}
